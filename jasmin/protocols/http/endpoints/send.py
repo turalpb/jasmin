@@ -105,6 +105,8 @@ class Send(Resource):
                 self.stats,
                 self.log
             )
+            self.log.info(f"User info by Tural: {updated_request.args}")
+            self.log.info("Musa We can connect db here")
 
             # Update CnxStatus
             user.getCnxStatus().httpapi['connects_count'] += 1
